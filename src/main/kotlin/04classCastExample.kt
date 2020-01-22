@@ -3,7 +3,7 @@
 fun main(args: Array<String>) {
     val ta: TypeA = TypeB("H")
     val tb = TypeB("B")
-    val tc = TypeC()
+    //val tc = TypeC()
 
     // Type checks
     // Kotlin got the "is" keyword to determine if two types are castable
@@ -12,9 +12,12 @@ fun main(args: Array<String>) {
     println(tb is TypeA) // True
     println(ta is TypeC) // False
 
+
+
+
     // Safe cast -> The value of newTypeA will be null as we cannot cast TypeB to TypeC
     val newTypeA : TypeA? = ta as? TypeC
-    println(newTypeA)
+    assert(newTypeA == null)
 
     // Unsafe cast
     // This will throw a class cast exception as

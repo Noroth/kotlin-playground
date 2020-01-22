@@ -9,8 +9,22 @@ fun main() {
 
 
     // maps
-    val numberMap = mapOf("one" to 1, "two" to 2)
+    val numberMap = mapOf(
+        "one" to 1,
+        "two" to 2,
+        "three" to 4
+    )
 
     println(numberMap.toString())
 
+    println(10 times 4) // 40
+
+}
+
+private infix fun Int.times(i : Int): Int{
+    return this * i;
+}
+
+private fun getValue(value: Int) : Int{
+    return value
 }

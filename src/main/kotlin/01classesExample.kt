@@ -1,6 +1,6 @@
 // Classes in Kotlin
 
-fun main(args: Array<String>) {
+fun main() {
     val c : Animal = Dog("Dog", 5, 4.5)
     // Kotlin supports string interpolation, no formatting required.
     println("I can directly access the properties. Name:  ${c.name}, Age: ${c.age}, Size ${c.size}")
@@ -14,7 +14,6 @@ fun main(args: Array<String>) {
     // public inline fun <T> Iterable<T>.forEach(action: (T) -> Unit): Unit
     // an anonymous function with one parameter will wrap it to the keyword "it"
     animals.forEach {
-
         it.sayHello()
     }
 
@@ -45,15 +44,12 @@ abstract class Animal(val name: String, var age: Int, val size: Double ) {
     // Kotlin does not have static classes like Java does.
     // Companion objects are declared within a class to provide methods from a class context.
     companion object Factory {
-        inline fun <reified  T : Animal> createAnimalOfType(): T? {
-
-            when (T::class) {
+        inline fun <reified  T : Animal> createAnimalOfType(): Animal? {
+            return when(T::class){
                 Dog::class -> Dog("dog", 1, 1.0)
                 Cat::class -> Cat("cat", 1, 1.0)
                 else -> null
             }
-
-            return null
         }
     }
 }
