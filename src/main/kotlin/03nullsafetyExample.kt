@@ -26,7 +26,7 @@ fun main(args: Array<String>) {
 
     val brand1 = c1.brand
 
-    // val brand2 = c2.brand  // hl this will create a compiler expcetion because I do not check if the variable is possibly null
+    // val brand2 = c2.brand  // hl this will create a compiler exception because I do not check if the variable is possibly null
 
     // to correctly retrieve the value for the brand, you need to add the "?" sign to perform a null check
     val brand2 = c2?.brand

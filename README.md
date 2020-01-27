@@ -10,3 +10,21 @@ Kotlin for demonstration purposes.
 
 ### Section 3 - Null Safety in Kotlin
 [03 Null Safety examples](src/main/kotlin/03nullsafetyExample.kt)
+
+### Section 4 -  Classes examples
+[04 Class cast example](src/main/kotlin/04classCastExample.kt)
+
+### Section 5 - Exception handling
+[05 DSL Example](src/main/kotlin/05dslExample.kt)
+
+### Section 6 - Null Safety in Kotlin
+[06 Range expressions](src/main/kotlin/06rangeExpressions.kt)
+
+### Section 7 -  Classes examples
+[07 List handling example](src/main/kotlin/07listhandlingExample.kt)
+
+### Section 8 - Exception handling
+[08 Coroutines](src/main/kotlin/08coroutines.kt)
+
+### Section 9 - Null Safety in Kotlin
+[09 Higher order functions and lambdas](src/main/kotlin/09higherOrderFunctionsAndLambdas.kt)
