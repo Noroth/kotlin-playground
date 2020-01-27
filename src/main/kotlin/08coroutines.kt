@@ -3,11 +3,14 @@ import kotlin.random.Random
 
 fun main() = runBlocking {
     // Default start of coroutine
-    launchInGlobalScope()
+    val global = launchInGlobalScope()
 
     // Launch as job and wait for finalization
     val job = launch { doSomething() }
     job.join()
+    println("job 1 finished")
+    global.join()
+    println("job 2 finished")
 
     // A parent waits for the underlying child coroutines
     invokeAsParent()

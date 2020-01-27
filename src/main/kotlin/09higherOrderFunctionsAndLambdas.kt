@@ -1,8 +1,8 @@
 fun main() {
     var result: String = ""
-    compute("Hallo", {
+    compute("Hallo") {
         result = "$it Welt"
-    })
+    }
     println(result)
 
     val a: String? = null

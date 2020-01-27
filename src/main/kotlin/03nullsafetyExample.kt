@@ -8,14 +8,12 @@ non nullable reference types. By default when defining variables or constants th
 fun main(args: Array<String>) {
 
     // the following line will create a compiler error
-    // The hl is just a custom expression to highlight the line in my intellij
-    // Settings -> Editor -> TODO -> new pattern -> \b.*\/\/.*hl\b.*
-    // val a : Int = null // hl
+    // val a : Int = null
 
     // If you need to assign null to a variable (I'm leaving constants out because that makes no sense)
     // you need to add a question mark to indicate that a variable can be nullable
 
-    var b : Int? = null
+    val b : Int? = null
 
     println("The value of b is $b")
 
@@ -26,7 +24,7 @@ fun main(args: Array<String>) {
 
     val brand1 = c1.brand
 
-    // val brand2 = c2.brand  // hl this will create a compiler exception because I do not check if the variable is possibly null
+    // val brand2 = c2.brand  // this will create a compiler exception because I do not check if the variable is possibly null
 
     // to correctly retrieve the value for the brand, you need to add the "?" sign to perform a null check
     val brand2 = c2?.brand
@@ -36,7 +34,7 @@ fun main(args: Array<String>) {
     I got no example for this being a good practice
     */
 
-    //val brand3 = c2!!.brand // hl uncomment this line to throw a null pointer exception
+    //val brand3 = c2!!.brand // uncomment this line to throw a null pointer exception
 }
 
 class Car(var brand: String?)

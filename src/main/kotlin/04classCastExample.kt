@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 
     // Unsafe cast
     // This will throw a class cast exception as
-    // val newTypeA1 : TypeA = ta as TypeC // hl
+    // val newTypeA1 : TypeA = ta as TypeC 
 
 }
 

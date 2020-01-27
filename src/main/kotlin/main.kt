@@ -13,3 +13,5 @@ fun pln(message: Any?) = println(message)
 fun tryExample(){
     throw IllegalArgumentException("This is an exception thrown in a function")
 }
+
+
