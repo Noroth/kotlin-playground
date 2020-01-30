@@ -23,8 +23,8 @@ Kotlin for demonstration purposes.
 ### Section 7 -  List handling example
 [07 List handling example](src/main/kotlin/07listhandlingExample.kt)
 
-### Section 8 - Exception handling
+### Section 8 - Coroutines
 [08 Coroutines](src/main/kotlin/08coroutines.kt)
 
-### Section 9 - Null Safety in Kotlin
+### Section 9 - Higher order functions and lambdas
 [09 Higher order functions and lambdas](src/main/kotlin/09higherOrderFunctionsAndLambdas.kt)
